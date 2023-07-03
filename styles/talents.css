@@ -27,7 +27,7 @@
     background-color: rgba(0, 0, 0, .9);
     height: 15px;
 }
-  
+
 .sheet .talent-header > span {
     display: flex;
     justify-content: center;
@@ -80,7 +80,7 @@
 .sheet .talent-list-name {
     display: flex;
     flex-direction: column;
-    width: 90% ;
+    width: 90%;
     height: 30px;
     margin-right: 25px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .6);
@@ -191,7 +191,7 @@
     background-color: transparent;
     font-family: inherit;
 }
-  
+
 .talents .talents-requirements .editor {
     height: 100%;
     background-color: transparent;
@@ -238,7 +238,7 @@
     font-family: inherit;
     padding: 2px 2px 2px 5px;
 }
-  
+
 .talents .talents-effect .editor {
     height: 100%;
     background-color: transparent;

@@ -1,45 +1,46 @@
 <form class="{{cssClass}} item" autocomplete="off">
 
-    <div class="shields-box">
-        <div class="shields-header-box">
-            <div class="shields-header-block">
-                <input type="text" name="name" value="{{item.name}}" data-dtype="String" />
-            </div>
-        </div>
+	<div class="shields-box">
+		<div class="shields-header-box">
+			<div class="shields-header-block">
+				<input type="text" name="name" value="{{item.name}}" data-dtype="String"/>
+			</div>
+		</div>
 
-        <div class="item shields-block">
-            <div class="box-header">
-                <span class="">{{localize "EXPANSE.Type" }}</span>
-                <span class="">{{localize "EXPANSE.Bonus" }}</span>
-                <span class="">{{localize "EXPANSE.Cost" }}</span>
-            </div>
+		<div class="item shields-block">
+			<div class="box-header">
+				<span class="">{{localize "EXPANSE.Type" }}</span>
+				<span class="">{{localize "EXPANSE.Bonus" }}</span>
+				<span class="">{{localize "EXPANSE.Cost" }}</span>
+			</div>
 
-            <div class="shields-detail-box">
-                <div class="shields-attribute">
-                    <input type="text" name="system.type" value="{{system.type}}"  data-dtype="String" />
-                </div>
-                <div class="shields-attribute">
-                    <input type="text" name="system.bonus" value="{{system.bonus}}" data-dtype="Number" />
-                </div>
-                <div class="shields-attribute">
-                    <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number" />
-                </div>
-                <div class="hidden-value">
-                    <input type="checkbox" class="expanse-checkbox" name="system.equip"
-                        {{checked system.equip}} data-dtype="Boolean">
-                </div>
-            </div>
-        </div>
+			<div class="shields-detail-box">
+				<div class="shields-attribute">
+					<input type="text" name="system.type" value="{{system.type}}" data-dtype="String"/>
+				</div>
+				<div class="shields-attribute">
+					<input type="text" name="system.bonus" value="{{system.bonus}}" data-dtype="Number"/>
+				</div>
+				<div class="shields-attribute">
+					<input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+				</div>
+				<div class="hidden-value">
+					<input type="checkbox" class="expanse-checkbox" name="system.equip"
+					       {{checked system.equip}} data-dtype="Boolean">
+				</div>
+			</div>
+		</div>
 
-        <div class="shields-desc-block">
-            <div class="box-header">
-                <span class="">{{localize "EXPANSE.Description" }}</span>
-            </div>
-            <div class="shields-desc-box">
-                {{editor enrichment.system.description target="system.description" button=true owner=owner editable=true}}
-            </div>
-        </div>
+		<div class="shields-desc-block">
+			<div class="box-header">
+				<span class="">{{localize "EXPANSE.Description" }}</span>
+			</div>
+			<div class="shields-desc-box">
+				{{editor enrichment.system.description target="system.description" button=true owner=owner
+				editable=true}}
+			</div>
+		</div>
 
-    </div>
+	</div>
 
 </form> 

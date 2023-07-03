@@ -189,11 +189,11 @@ img {
     flex-direction: column;
 }
 
-.sheet header.sheet-header>* {
+.sheet header.sheet-header > * {
     flex: none;
 }
 
-.sheet>* {
+.sheet > * {
     flex: unset;
 }
 
@@ -213,7 +213,6 @@ ul {
 .sheet .tox .tox-tbtn {
     width: 25px !important;
 }
-
 
 
 .tox.tox-tinymce {
@@ -398,7 +397,7 @@ blockquote {
     height: 15px;
 }
 
-.box-header>span {
+.box-header > span {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -443,7 +442,7 @@ blockquote {
     justify-content: space-between;
 }
 
-.ability-name>span {
+.ability-name > span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,7 +479,7 @@ blockquote {
     justify-content: flex-end;
 }
 
-.ability-focus-box>span {
+.ability-focus-box > span {
     font-size: .8em;
     text-transform: uppercase;
     align-items: center;
@@ -503,7 +502,7 @@ blockquote {
     /*padding: 0 5px;*/
     overflow: scroll;
     overflow-y: hidden;
-    list-style:none;
+    list-style: none;
     margin: 0px;
 }
 
@@ -514,7 +513,7 @@ blockquote {
 .age-focus li {
     display: flex;
     background-color: #74bddc;
-    text-transform:uppercase;
+    text-transform: uppercase;
     height: 20px;
     border-radius: 10px;
     padding: 1px 10px !important;
@@ -601,7 +600,7 @@ blockquote {
     align-items: center;
 }
 
-.condition>span {
+.condition > span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -658,7 +657,7 @@ input[type=checkbox] {
     height: 15px;
 }
 
-.focus-header>span {
+.focus-header > span {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -702,7 +701,7 @@ input[type=checkbox] {
     color: whitesmoke;
 }
 
-.sheet .stunts-header-block>span {
+.sheet .stunts-header-block > span {
     font-size: 100%;
     line-height: 100%;
 
@@ -717,7 +716,7 @@ input[type=checkbox] {
 
 .sheet .focuses-box-stunt-name {
     display: flex;
-    text-align:center;
+    text-align: center;
     width: 70%;
 }
 
@@ -765,7 +764,7 @@ input[type=checkbox] {
     height: 15px;
 }
 
-.stunt-header>span {
+.stunt-header > span {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -866,7 +865,7 @@ input[type=checkbox] {
     color: whitesmoke;
 }
 
-.sheet .stunts-header-block>span {
+.sheet .stunts-header-block > span {
     font-size: 100%;
     line-height: 100%;
 
@@ -966,7 +965,7 @@ input[type=checkbox] {
     padding: 3px;
 }
 
-.sheet .editor-content>p {
+.sheet .editor-content > p {
     margin-top: 0;
 }
 
@@ -1027,7 +1026,7 @@ input[type=checkbox] {
     height: 15px;
 }
 
-.sheet .weapon-header>span {
+.sheet .weapon-header > span {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -1091,7 +1090,7 @@ input[type=checkbox] {
     height: 15px;
 }
 
-.sheet .armor-header>span {
+.sheet .armor-header > span {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -1176,7 +1175,7 @@ input[type=checkbox] {
     justify-content: space-between;
 }*/
 
-.sheet .income-name>span {
+.sheet .income-name > span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1218,7 +1217,7 @@ input[type=checkbox] {
     border-bottom-right-radius: 10px;
 }
 
-.sheet .extra-equipment>span {
+.sheet .extra-equipment > span {
     margin: 5px;
 }
 
@@ -1227,7 +1226,6 @@ input[type=checkbox] {
     font-family: 'Montserrat', sans-serif;
     border: none;
 }
-
 
 
 /*************** 
@@ -1340,7 +1338,7 @@ input[type=checkbox] {
     color: whitesmoke;
 }
 
-.window-app.dialog.target-number-dialog .tn-header-block>span {
+.window-app.dialog.target-number-dialog .tn-header-block > span {
     font-size: 100%;
     line-height: 100%;
 }
@@ -1373,7 +1371,7 @@ input[type=checkbox] {
     background-color: #f3f3f3;
 }
 
-.window-app.dialog.target-number-dialog .tn-row>span {
+.window-app.dialog.target-number-dialog .tn-row > span {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -1704,7 +1702,7 @@ a.content-link, a.inline-roll {
     font-size: 12px;
 }
 
-.popup>ul {
+.popup > ul {
     list-style: none;
 }
 

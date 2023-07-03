@@ -1,103 +1,105 @@
 <form class="{{cssClass}} item" autocomplete="off">
 
-    <div class="weapons-box">
-        <div class="weapons-header-box">
-            <div class="weapons-header-block">
-                <input name="name" type="text" value="{{item.name}}" data-dtype="String" />
-            </div>
-        </div>
+	<div class="weapons-box">
+		<div class="weapons-header-box">
+			<div class="weapons-header-block">
+				<input name="name" type="text" value="{{item.name}}" data-dtype="String"/>
+			</div>
+		</div>
 
-        <div class="item weapons-block">
-            <div class="box-header">
-                <span class="">{{localize "EXPANSE.Type" }}</span>
-                <span class="">{{localize "EXPANSE.DamageDice" }}</span>
-                <span class="">{{localize "EXPANSE.Modifier" }}</span>
-            </div>
+		<div class="item weapons-block">
+			<div class="box-header">
+				<span class="">{{localize "EXPANSE.Type" }}</span>
+				<span class="">{{localize "EXPANSE.DamageDice" }}</span>
+				<span class="">{{localize "EXPANSE.Modifier" }}</span>
+			</div>
 
-            <div class="weapons-detail-box">
+			<div class="weapons-detail-box">
 
-                <div class="weapons-attribute">
+				<div class="weapons-attribute">
 
-                    <select type="text" name="system.type" data-dtype="String">
-                        {{#select system.type}}
-                        <option value="unarmed" mod-type="fighting">{{localize "EXPANSE.Unarmed" }}</option>
-                        <option value="makeshift" mod-type="fighting">{{localize "EXPANSE.Makeshift" }}</option>
-                        <option value="light_melee" mod-type="fighting">{{localize "EXPANSE.LightMelee" }}</option>
-                        <option value="heavy_melee" mod-type="fighting">{{localize "EXPANSE.HeavyMelee" }}</option>
-                        <option value="pistol" mod-type="accuracy">{{localize "EXPANSE.Pistol" }}</option>
-                        <option value="rifle" mod-type="accuracy">{{localize "EXPANSE.Rifle" }}</option>
-                        <option value="grenade">{{localize "EXPANSE.Grenade" }}</option>
+					<select type="text" name="system.type" data-dtype="String">
+						{{#select system.type}}
+						<option value="unarmed" mod-type="fighting">{{localize "EXPANSE.Unarmed" }}</option>
+						<option value="makeshift" mod-type="fighting">{{localize "EXPANSE.Makeshift" }}</option>
+						<option value="light_melee" mod-type="fighting">{{localize "EXPANSE.LightMelee" }}</option>
+						<option value="heavy_melee" mod-type="fighting">{{localize "EXPANSE.HeavyMelee" }}</option>
+						<option value="pistol" mod-type="accuracy">{{localize "EXPANSE.Pistol" }}</option>
+						<option value="rifle" mod-type="accuracy">{{localize "EXPANSE.Rifle" }}</option>
+						<option value="grenade">{{localize "EXPANSE.Grenade" }}</option>
 
-                        {{/select}}
-                    </select>
-                </div>
+						{{/select}}
+					</select>
+				</div>
 
-                <div class="weapons-attribute">
-                    <input class="weapons-attribute-input" type="number" name="system.damage" value="{{system.damage}}" />
-                    <select type="number" name="system.dieFaces" value="{{system.dieFaces}}" data-dtype="Number">
-                        {{#select system.dieFaces}}
-                        <option value="6">D6</option>
-                        <option value="3">D3</option>
-                        {{/select}}
-                    </select>
-                </div>
+				<div class="weapons-attribute">
+					<input class="weapons-attribute-input" type="number" name="system.damage"
+					       value="{{system.damage}}"/>
+					<select type="number" name="system.dieFaces" value="{{system.dieFaces}}" data-dtype="Number">
+						{{#select system.dieFaces}}
+						<option value="6">D6</option>
+						<option value="3">D3</option>
+						{{/select}}
+					</select>
+				</div>
 
-                <div class="weapons-attribute">
+				<div class="weapons-attribute">
 
-                    <select type="text" name="system.modifier" value="{{system.modifier}}" data-dtype="String">
-                        {{#select system.modifier}}
-                        <option value="None">{{localize "EXPANSE.None" }}</option>
-                        <option value="Strength">{{localize "EXPANSE.strength" }}</option>
-                        <option value="Dexterity">{{localize "EXPANSE.dexterity" }}</option>
-                        <option value="Perception">{{localize "EXPANSE.perception" }}</option>
-                        <option value="Manual">{{localize "EXPANSE.Manual" }}</option>
+					<select type="text" name="system.modifier" value="{{system.modifier}}" data-dtype="String">
+						{{#select system.modifier}}
+						<option value="None">{{localize "EXPANSE.None" }}</option>
+						<option value="Strength">{{localize "EXPANSE.strength" }}</option>
+						<option value="Dexterity">{{localize "EXPANSE.dexterity" }}</option>
+						<option value="Perception">{{localize "EXPANSE.perception" }}</option>
+						<option value="Manual">{{localize "EXPANSE.Manual" }}</option>
 
-                        {{/select}}
-                    </select>
+						{{/select}}
+					</select>
 
-                    {{#ifCond system.modifier '===' "Manual"}}
-                    <input class="weapons-attribute-input" type="number" name="system.manualDamage"
-                        value="{{system.manualDamage}}" data-dtype="Number" />
-                    {{/ifCond}}
-                </div>
-            </div>
-        </div>
-        <div class="item weapons-block">
-            <div class="box-header">
-                <span class="">{{localize "EXPANSE.Qualities" }}</span>
-                <span class="">{{localize "EXPANSE.Range" }}</span>
-                <span class="">{{localize "EXPANSE.MaxRange" }}</span>
-                <span class="">{{localize "EXPANSE.Cost" }}</span>
-            </div>
+					{{#ifCond system.modifier '===' "Manual"}}
+					<input class="weapons-attribute-input" type="number" name="system.manualDamage"
+					       value="{{system.manualDamage}}" data-dtype="Number"/>
+					{{/ifCond}}
+				</div>
+			</div>
+		</div>
+		<div class="item weapons-block">
+			<div class="box-header">
+				<span class="">{{localize "EXPANSE.Qualities" }}</span>
+				<span class="">{{localize "EXPANSE.Range" }}</span>
+				<span class="">{{localize "EXPANSE.MaxRange" }}</span>
+				<span class="">{{localize "EXPANSE.Cost" }}</span>
+			</div>
 
-            <div class="weapons-detail-box">
-                <div class="weapons-attribute">
-                    <input type="text" name="system.quality" value="{{system.quality}}" data-dtype="String" />
-                </div>
+			<div class="weapons-detail-box">
+				<div class="weapons-attribute">
+					<input type="text" name="system.quality" value="{{system.quality}}" data-dtype="String"/>
+				</div>
 
-                <div class="weapons-attribute">
-                    <input type="text" name="system.rangemin" value="{{system.rangemin}}" data-dtype="String" />
-                </div>
+				<div class="weapons-attribute">
+					<input type="text" name="system.rangemin" value="{{system.rangemin}}" data-dtype="String"/>
+				</div>
 
-                <div class="weapons-attribute">
-                    <input type="text" name="system.rangemax" value="{{system.rangemax}}" data-dtype="String" />
-                </div>
+				<div class="weapons-attribute">
+					<input type="text" name="system.rangemax" value="{{system.rangemax}}" data-dtype="String"/>
+				</div>
 
-                <div class="weapons-attribute">
-                    <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number" />
-                </div>
-            </div>
-        </div>
+				<div class="weapons-attribute">
+					<input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+				</div>
+			</div>
+		</div>
 
-        <div class="weapons-desc-block">
-            <div class="box-header">
-                <span class="">Description</span>
-            </div>
-            <div class="weapons-desc-box">
-                {{editor enrichment.system.description target="system.description" button=true owner=owner editable=true}}
-            </div>
-        </div>
+		<div class="weapons-desc-block">
+			<div class="box-header">
+				<span class="">Description</span>
+			</div>
+			<div class="weapons-desc-box">
+				{{editor enrichment.system.description target="system.description" button=true owner=owner
+				editable=true}}
+			</div>
+		</div>
 
-    </div>
+	</div>
 
 </form>

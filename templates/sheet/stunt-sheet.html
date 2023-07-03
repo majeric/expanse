@@ -1,43 +1,44 @@
 <form class="{{cssClass}} item" autocomplete="off">
 
-    <header class="sheet-header">
-    </header>
+	<header class="sheet-header">
+	</header>
 
-    <section class="sheet-body">
+	<section class="sheet-body">
 
-        <div class="stunts" data-group="primary" data-tab="stunts">
+		<div class="stunts" data-group="primary" data-tab="stunts">
 
-            <div class="stunts-box">
-                <div class="stunts-header-box">
-                    <div class="stunts-header-block">
+			<div class="stunts-box">
+				<div class="stunts-header-box">
+					<div class="stunts-header-block">
                         <span>
-                            <input type="text" name="name" value="{{item.name}}" data-dtype="String" />
+                            <input type="text" name="name" value="{{item.name}}" data-dtype="String"/>
                         </span>
-                    </div>
+					</div>
 
-                    <div class="box-header">
-                        <span class="stunts-box-sp">{{localize "EXPANSE.SPCost" }}</span>
-                        <span class="stunts-box-stunt-name">{{localize "EXPANSE.Type" }}</span>
-                        <span class="stunts-box-stunt-desc">{{localize "EXPANSE.Stunt" }}</span>
-                    </div>
-                </div>
+					<div class="box-header">
+						<span class="stunts-box-sp">{{localize "EXPANSE.SPCost" }}</span>
+						<span class="stunts-box-stunt-name">{{localize "EXPANSE.Type" }}</span>
+						<span class="stunts-box-stunt-desc">{{localize "EXPANSE.Stunt" }}</span>
+					</div>
+				</div>
 
-                <div class="item stunts-section" draggable="false" data-item-id="{{item.id}}">
-                    <div class="stunts-section-sp">
-                        <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="String" />
-                    </div>
+				<div class="item stunts-section" draggable="false" data-item-id="{{item.id}}">
+					<div class="stunts-section-sp">
+						<input type="text" name="system.cost" value="{{system.cost}}" data-dtype="String"/>
+					</div>
 
-                    <div class="stunts-section-name">
-                        <input type="text" name="system.type" value="{{system.type}}" data-dtype="String" />
-                    </div>
-                    <div class="stunts-section-desc">
-                        {{editor enrichment.system.description target="system.description" button=true owner=owner editable=true}}
-                    </div>
-                </div>
+					<div class="stunts-section-name">
+						<input type="text" name="system.type" value="{{system.type}}" data-dtype="String"/>
+					</div>
+					<div class="stunts-section-desc">
+						{{editor enrichment.system.description target="system.description" button=true owner=owner
+						editable=true}}
+					</div>
+				</div>
 
-            </div>
+			</div>
 
-        </div>
+		</div>
 
-    </section>
+	</section>
 </form> 

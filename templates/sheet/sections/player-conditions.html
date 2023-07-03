@@ -2,24 +2,25 @@
 
 <div class="box-header">
 
-    <!-- Header -->
+	<!-- Header -->
 
-    <span>{{localize "EXPANSE.Conditions" }}</span>
+	<span>{{localize "EXPANSE.Conditions" }}</span>
 
 </div>
 
 <div class="condition-container">
 
-    {{#each conditions as |conditions key|}}
+	{{#each conditions as |conditions key|}}
 
-    <div class="condition" title="{{localize (concat "EXPANSE." key "Desc") }}">
+	<div class="condition" title="{{localize (concat " EXPANSE.
+	" key "Desc") }}">
 
-        <input type="checkbox" class="expanse-checkbox active-condition" name="{{key}}" {{checked conditions.active}}>
+	<input type="checkbox" class="expanse-checkbox active-condition" name="{{key}}" {{checked conditions.active}}>
 
-        <span class="condition-hover">{{localize (concat "EXPANSE." key) }}</span>
+	<span class="condition-hover">{{localize (concat "EXPANSE." key) }}</span>
 
-    </div>
+</div>
 
-    {{/each}}
+{{/each}}
 
 </div>

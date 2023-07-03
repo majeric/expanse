@@ -1,106 +1,113 @@
 <form class="{{cssClass}} talent-item" autocomplete="off">
 
-    <header class="sheet-header">
-    </header>
+	<header class="sheet-header">
+	</header>
 
-    <section class="sheet-body">
+	<section class="sheet-body">
 
-        <div class="talents" data-group="primary" data-tab="talents">
+		<div class="talents" data-group="primary" data-tab="talents">
 
-            <div class="talents-box" data-item-id="{{id}}">
-                {{log system}}
-                {{log item}}
-                {{log data}}
-                <div class="talents-section">
-                    <div class="talents-name-block">
-                        <div class="talents-titles">
+			<div class="talents-box" data-item-id="{{id}}">
+				{{log system}}
+				{{log item}}
+				{{log data}}
+				<div class="talents-section">
+					<div class="talents-name-block">
+						<div class="talents-titles">
                             <span class="margin-l-5">
-                                <input type="text" name="name" value="{{item.name}}" data-dtype="String" />
+                                <input type="text" name="name" value="{{item.name}}" data-dtype="String"/>
                             </span>
-                        </div>
+						</div>
 
-                        <div class="talents-titles" style="align-self:center;">
-                            <span>{{localize "EXPANSE.Specialization" }}</span>
-                            <input type="checkbox" class="expanse-checkbox learn-specialization"
-                                name="system.specialization" data-item-id={{item._id}} {{checked system.specialization}}>
-                        </div>
+						<div class="talents-titles" style="align-self:center;">
+							<span>{{localize "EXPANSE.Specialization" }}</span>
+							<input type="checkbox" class="expanse-checkbox learn-specialization"
+							       name="system.specialization" data-item-id={{item._id}} {{checked
+							       system.specialization}}>
+						</div>
 
-                    </div>
-                    <div class="talents-requirement-block">
-                        <div class="talents-titles">
-                            <span class="margin-l-5">{{localize "EXPANSE.Requirements" }}:</span>
-                        </div>
-                        <div class="talents-requirements">
-                            {{editor enrichment.system.requirements target="system.requirements" button=true owner=owner
-                            editable=true}}
-                        </div>
-                    </div>
+					</div>
+					<div class="talents-requirement-block">
+						<div class="talents-titles">
+							<span class="margin-l-5">{{localize "EXPANSE.Requirements" }}:</span>
+						</div>
+						<div class="talents-requirements">
+							{{editor enrichment.system.requirements target="system.requirements" button=true owner=owner
+							editable=true}}
+						</div>
+					</div>
 
-                </div>
+				</div>
 
-                <div class="talents-section">
-                    <div class="talents-requirement-block">
-                        <div class="talents-titles">
-                            <span class="margin-l-5">{{localize "EXPANSE.Description" }}:</span>
-                        </div>
-                        <div class="talents-requirements">
-                            {{editor enrichment.system.description target="system.description" button=true owner=owner
-                            editable=true}}
-                        </div>
-                    </div>
-                </div>
+				<div class="talents-section">
+					<div class="talents-requirement-block">
+						<div class="talents-titles">
+							<span class="margin-l-5">{{localize "EXPANSE.Description" }}:</span>
+						</div>
+						<div class="talents-requirements">
+							{{editor enrichment.system.description target="system.description" button=true owner=owner
+							editable=true}}
+						</div>
+					</div>
+				</div>
 
-                <div class="talents-section">
-                    <div class="talents-degree-block">
-                        <div class="talents-degree-titles">
+				<div class="talents-section">
+					<div class="talents-degree-block">
+						<div class="talents-degree-titles">
 
-                            <input type="checkbox" class="expanse-checkbox learn-talent" name="system.ranks.novice.active"
-                                data-item-id={{item._id}} data-rank="novice" {{checked system.ranks.novice.active}}>
-                            <span>{{localize "EXPANSE.Novice" }}</span>
+							<input type="checkbox" class="expanse-checkbox learn-talent"
+							       name="system.ranks.novice.active"
+							       data-item-id={{item._id}} data-rank="novice" {{checked system.ranks.novice.active}}>
+							<span>{{localize "EXPANSE.Novice" }}</span>
 
-                        </div>
-                        <div class="talents-effect">
-                            {{editor enrichment.system.ranks.novice.effect target="system.ranks.novice.effect" button=true
-                            owner=owner editable=true}}
-                        </div>
-                    </div>
-                </div>
+						</div>
+						<div class="talents-effect">
+							{{editor enrichment.system.ranks.novice.effect target="system.ranks.novice.effect"
+							button=true
+							owner=owner editable=true}}
+						</div>
+					</div>
+				</div>
 
-                <div class="talents-section">
-                    <div class="talents-degree-block">
-                        <div class="talents-degree-titles">
+				<div class="talents-section">
+					<div class="talents-degree-block">
+						<div class="talents-degree-titles">
 
-                            <input type="checkbox" class="expanse-checkbox learn-talent" name="system.ranks.expert.active"
-                                data-item-id={{item._id}} data-rank="expert" {{checked system.ranks.expert.active}}>
-                            <span>{{localize "EXPANSE.Expert" }}</span>
+							<input type="checkbox" class="expanse-checkbox learn-talent"
+							       name="system.ranks.expert.active"
+							       data-item-id={{item._id}} data-rank="expert" {{checked system.ranks.expert.active}}>
+							<span>{{localize "EXPANSE.Expert" }}</span>
 
-                        </div>
-                        <div class="talents-effect">
-                            {{editor enrichment.system.ranks.expert.effect target="system.ranks.expert.effect" button=true
-                            owner=owner editable=true}}
-                        </div>
-                    </div>
-                </div>
+						</div>
+						<div class="talents-effect">
+							{{editor enrichment.system.ranks.expert.effect target="system.ranks.expert.effect"
+							button=true
+							owner=owner editable=true}}
+						</div>
+					</div>
+				</div>
 
-                <div class="talents-section">
-                    <div class="talents-degree-block">
-                        <div class="talents-degree-titles">
+				<div class="talents-section">
+					<div class="talents-degree-block">
+						<div class="talents-degree-titles">
 
-                            <input type="checkbox" class="expanse-checkbox learn-talent" name="system.ranks.master.active"
-                                data-item-id={{item._id}} data-rank="master" {{checked system.ranks.master.active}}>
-                            <span>{{localize "EXPANSE.Master" }}</span>
+							<input type="checkbox" class="expanse-checkbox learn-talent"
+							       name="system.ranks.master.active"
+							       data-item-id={{item._id}} data-rank="master" {{checked system.ranks.master.active}}>
+							<span>{{localize "EXPANSE.Master" }}</span>
 
-                        </div>
-                        <div class="talents-effect">
-                            {{editor enrichment.system.ranks.master.effect target="system.ranks.master.effect" button=true
-                            owner=owner editable=true}}
-                        </div>
-                    </div>
-                </div>
+						</div>
+						<div class="talents-effect">
+							{{editor enrichment.system.ranks.master.effect target="system.ranks.master.effect"
+							button=true
+							owner=owner editable=true}}
+						</div>
+					</div>
+				</div>
 
-            </div>
+			</div>
 
-        </div>
+		</div>
 
-    </section>
+	</section>
 </form>

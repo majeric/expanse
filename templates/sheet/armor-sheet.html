@@ -1,49 +1,50 @@
 <form class="{{cssClass}} item" autocomplete="off">
 
-    <div class="armors-box">
-        <div class="armors-header-box">
-            <div class="armors-header-block">
-                <input name="name" type="text" value="{{item.name}}" data-dtype="String"  />
-            </div>
-        </div>
+	<div class="armors-box">
+		<div class="armors-header-box">
+			<div class="armors-header-block">
+				<input name="name" type="text" value="{{item.name}}" data-dtype="String"/>
+			</div>
+		</div>
 
-        <div class="item armors-block">
-            <div class="box-header">
-                <span class="">{{localize "EXPANSE.Type" }}</span>
-                <span class="">{{localize "EXPANSE.Bonus" }}</span>
-                <span class="">{{localize "EXPANSE.Penalty" }}</span>
-                <span class="">{{localize "EXPANSE.Cost" }}</span>
-            </div>
- 
-            <div class="armors-detail-box">
-                <div class="armors-attribute">
-                    <input type="text" name="system.type" value="{{system.type}}"  data-dtype="String" />
-                </div>
-                <div class="armors-attribute">
-                    <input type="text" name="system.bonus" value="{{system.bonus}}" data-dtype="Number" />
-                </div>
-                <div class="armors-attribute">
-                    <input type="text" name="system.penalty" value="{{system.penalty}}" data-dtype="Number" />
-                </div>
-                <div class="armors-attribute">
-                    <input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number" />
-                </div>
-                <div class="hidden-value">
-                    <input type="checkbox" class="expanse-checkbox" name="equip"
-                        {{checked equip}} data-dtype="Boolean">
-                </div>
-            </div>
-        </div>
+		<div class="item armors-block">
+			<div class="box-header">
+				<span class="">{{localize "EXPANSE.Type" }}</span>
+				<span class="">{{localize "EXPANSE.Bonus" }}</span>
+				<span class="">{{localize "EXPANSE.Penalty" }}</span>
+				<span class="">{{localize "EXPANSE.Cost" }}</span>
+			</div>
 
-        <div class="armors-desc-block">
-            <div class="box-header">
-                <span class="">{{localize "EXPANSE.Description" }}</span>
-            </div>
-            <div class="armors-desc-box">
-                {{editor enrichment.system.description target="system.description" button=true owner=owner editable=true}}
-            </div>
-        </div>
+			<div class="armors-detail-box">
+				<div class="armors-attribute">
+					<input type="text" name="system.type" value="{{system.type}}" data-dtype="String"/>
+				</div>
+				<div class="armors-attribute">
+					<input type="text" name="system.bonus" value="{{system.bonus}}" data-dtype="Number"/>
+				</div>
+				<div class="armors-attribute">
+					<input type="text" name="system.penalty" value="{{system.penalty}}" data-dtype="Number"/>
+				</div>
+				<div class="armors-attribute">
+					<input type="text" name="system.cost" value="{{system.cost}}" data-dtype="Number"/>
+				</div>
+				<div class="hidden-value">
+					<input type="checkbox" class="expanse-checkbox" name="equip"
+					       {{checked equip}} data-dtype="Boolean">
+				</div>
+			</div>
+		</div>
 
-    </div>
+		<div class="armors-desc-block">
+			<div class="box-header">
+				<span class="">{{localize "EXPANSE.Description" }}</span>
+			</div>
+			<div class="armors-desc-box">
+				{{editor enrichment.system.description target="system.description" button=true owner=owner
+				editable=true}}
+			</div>
+		</div>
+
+	</div>
 
 </form>

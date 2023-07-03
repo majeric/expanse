@@ -10,7 +10,7 @@
     min-height: 450px;
     max-height: none !important;
     margin: 0px 5px 0px 5px;
-    background-color: rgba(116,189,220, 0.5);
+    background-color: rgba(116, 189, 220, 0.5);
 }
 
 .ship .ship-image {
@@ -45,6 +45,7 @@
 .ship .ship-name {
     width: 40%;
 }
+
 .ship .ship-type {
     width: 25%;
 }
@@ -62,7 +63,7 @@
     white-space: nowrap;
     padding: 5px;
 }
-  
+
 .ship .ship-row input[type=text] {
     font-weight: bold;
     text-align: start;
@@ -105,7 +106,7 @@
     flex-direction: column;
     text-align: center;
     width: 100%;
-    min-height:100px;
+    min-height: 100px;
     margin: 0px 0px 10px 0px;
     background-color: #f3f3f3;
 }

@@ -42,7 +42,7 @@
     color: whitesmoke;
 }
 
-.npc .npc-header-block>span {
+.npc .npc-header-block > span {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -70,7 +70,7 @@
     height: 15px;
 }
 
-.npc .box-header>span {
+.npc .box-header > span {
     display: flex;
     justify-content: center;
     align-self: center;
@@ -95,7 +95,7 @@
     width: 50%;
 }
 
-.npc .npc-ability>span {
+.npc .npc-ability > span {
     display: flex;
     justify-content: center;
     align-self: center;
